@@ -1,0 +1,23 @@
+:root {
+  /* Colors */
+  /* Primary */
+
+  --Linear-gradient: hsl(237, 73%, 79%) to hsl(238, 63%, 64%);
+
+  /* Neutral */
+
+  --Blue-50: hsl(240, 78%, 98%);
+  --Gray-650: hsl(233, 13%, 49%);
+  --Gray-700: hsl(232, 13%, 33%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 62.5%;
+}
