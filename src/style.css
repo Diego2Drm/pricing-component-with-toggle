@@ -2,13 +2,13 @@
   /* Colors */
   /* Primary */
 
-  --Linear-gradient: hsl(237, 73%, 79%) to hsl(238, 63%, 64%);
+  --Linear-gradient: #a2a6f1 to #696ddd;
 
   /* Neutral */
 
-  --Blue-50: hsl(240, 78%, 98%);
-  --Gray-650: hsl(233, 13%, 49%);
-  --Gray-700: hsl(232, 13%, 33%);
+  --Blue-50: #f6f6fe;
+  --Gray-650: #6d708d;
+  --Gray-700: #494c5f;
 }
 
 * {
@@ -20,4 +20,41 @@
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 62.5%;
+  background: var(--Blue-50);
+}
+
+.container__body {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: 2rem;
+}
+
+.bg-top {
+  position: absolute;
+  top: -3rem;
+  right: -19rem;
+  z-index: -1;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+header .title {
+  font-size: 3rem;
+  color: var(--Gray-650);
+}
+
+header .content--subscription {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  color: #b6b6c1;
+  font-weight: 600;
+  font-size: 1.4rem;
 }
