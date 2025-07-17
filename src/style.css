@@ -55,9 +55,56 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   color: #b6b6c1;
   font-weight: 600;
   font-size: 1.4rem;
+}
+
+/* input */
+header label {
+  border-radius: 3rem;
+  width: 5rem;
+  height: 2.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: var(--linear-gradient);
+}
+
+header label input {
+  appearance: none;
+}
+
+header label span {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  left: .3rem;
+  transition: all 0.5s ease-in-out;
+}
+
+header label input:checked~span {
+  /* right: .3rem; */
+  /* translate: 2.2rem; */
+  left: 2.7rem;
+}
+
+header:has(input:checked)~main .content__basic--price-monthly,
+header:has(input:checked)~main .content__professional--price-monthly,
+header:has(input:checked)~main .content__master--price-monthly {
+  display: flex;
+}
+
+header:has(input:checked)~main .content__basic--price-anually,
+header:has(input:checked)~main .content__professional--price-anually,
+header:has(input:checked)~main .content__master--price-anually {
+  display: none;
 }
 
 /* main */
@@ -199,13 +246,3 @@ header {
   padding: 1rem;
   border: none;
 }
-
-/* .content__basic--price-monthly{
-  display: none;
-}
-header:has(input:checked) ~ main .content__basic--price-monthly {
-  display: flex;
-}
-header:has(input:checked) ~ main .content__basic--price-anually {
-  display: none;
-} */ 
