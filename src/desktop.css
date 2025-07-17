@@ -1,3 +1,7 @@
+.container__body{
+  height: 100vh;
+  overflow: hidden;
+}
 header .content--subscription {
   justify-content: center;
   gap: 4rem;
@@ -13,14 +17,25 @@ main {
 main .content__professional {
   height: 100%;
   padding-top: 4rem;
-  width: 28.2rem;
+  width: 35rem;
 }
 
 main .content__basic{
-  width: 28.2rem;
+  width: 35rem;
   border-radius: 1rem 0 0 1rem;
 }
 main .content__master {
-  width: 28.2rem;
+  width: 35rem;
   border-radius: 0 1rem 1rem 0;
+}
+.bg-top{
+  right: 0;
+}
+.bg-bottom{
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 40rem;
 }

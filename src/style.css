@@ -265,3 +265,7 @@ header label:hover {
   background: #696ddd;
   color: #fff;
 }
+
+.bg-bottom{
+  display: none;
+}
