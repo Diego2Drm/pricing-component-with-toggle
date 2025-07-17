@@ -207,10 +207,6 @@ header:has(input:checked)~main .content__master--price-anually {
   display: none;
 }
 
-.content__professional--price-anually {
-  /* Your styles here */
-}
-
 .content__professional--info {
   width: 100%;
   display: flex;
