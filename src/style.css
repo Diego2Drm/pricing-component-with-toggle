@@ -242,3 +242,26 @@ header:has(input:checked)~main .content__master--price-anually {
   padding: 1rem;
   border: none;
 }
+
+/* Active States */
+header label:hover {
+  transition: all .2s ease-in-out;
+  opacity: .6;
+}
+
+.content__basic button:hover,
+.content__master button:hover {
+  cursor: pointer;
+  background: #fff;
+  transition: all .2s ease-in-out;
+  color: #696ddd;
+  outline: 2px solid #696ddd;
+}
+
+.content__professional button:hover {
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  outline: 2px solid #fff;
+  background: #696ddd;
+  color: #fff;
+}
