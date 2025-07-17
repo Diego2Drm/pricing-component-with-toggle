@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./desktop.css" media="(min-width: 1024px)">
+
+  <title>Frontend Mentor | Pricing component with toggle</title>
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <section class="container__body">
+    <img class="bg-top" src="./images/bg-top.svg" alt="bg-top">
+    <header>
+      <h1 class="title">Our Pricing</h1>
+      <div class="content--subscription">
+        <p>Annually</p>
+
+        <label>
+          <input type="checkbox" name="" id="">
+          <span></span>
+        </label>
+
+        <p>Monthly</p>
+      </div>
+    </header>
+    <main>
+      <div class="content__basic">
+        <h3 class="content__basic--title"> Basic </h3>
+        <h2 class="content__basic--price-monthly">
+          &dollar;19.99
+        </h2>
+        <h2 class="content__basic--price-anually">
+          &dollar;199.99
+        </h2>
+        <div class="content__basic--info">
+          <p>
+            500 GB Storage
+          </p>
+          <p>
+            2 Users Allowed
+          </p>
+          <p>
+            Send up to 3 GB
+          </p>
+        </div>
+        <button>
+          Learn More
+        </button>
+      </div>
+
+      <div class="content__professional">
+        <h3 class="content__professional--title"> Professional </h3>
+        <h2 class="content__professional--price-monthly">
+          &dollar;24.99
+        </h2>
+
+        <h2 class="content__professional--price-anually">
+          &dollar;249.99
+        </h2>
+        <div class="content__professional--info">
+          <p>
+            1 TB Storage
+          </p>
+          <p>
+            5 Users Allowed
+          </p>
+          <p>
+            Send up to 10 GB
+          </p>
+        </div>
+        <button>
+          Learn More
+        </button>
+      </div>
+
+      <div class="content__master">
+        <h3 class="content__master--title"> Master </h3>
+        <h2 class="content__master--price-monthly">
+          &dollar;39.99
+        </h2>
+        <h2 class="content__master--price-anually">
+          &dollar;399.99
+        </h2>
+        <div class="content__master--info">
+          <p>
+            2 TB Storage
+          </p>
+          <p>
+            10 Users Allowed
+          </p>
+          <p>
+            Send up to 20 GB
+          </p>
+        </div>
+        <button>
+          Learn More
+        </button>
+      </div>
+    </main>
+
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <!-- <img class="bg-bottom" src="../images/bg-bottom.svg" alt="bg-bottom"> -->
+  </section>
+
+</body>
+
+</html>
