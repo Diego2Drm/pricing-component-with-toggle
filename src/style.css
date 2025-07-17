@@ -2,7 +2,7 @@
   /* Colors */
   /* Primary */
 
-  --Linear-gradient: #a2a6f1 to #696ddd;
+  --linear-gradient: linear-gradient(to right, #a2a6f1, #696ddd);
 
   /* Neutral */
 
@@ -27,7 +27,7 @@ html {
   position: relative;
   min-height: 100vh;
   overflow-x: hidden;
-  padding: 2rem;
+  padding: 2rem 3rem;
 }
 
 .bg-top {
@@ -37,6 +37,7 @@ html {
   z-index: -1;
 }
 
+/* header */
 header {
   display: flex;
   flex-direction: column;
@@ -45,12 +46,12 @@ header {
   margin: 3rem 0;
 }
 
-header .title {
+.title {
   font-size: 3rem;
   color: var(--Gray-650);
 }
 
-header .content--subscription {
+.content--subscription {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -58,3 +59,153 @@ header .content--subscription {
   font-weight: 600;
   font-size: 1.4rem;
 }
+
+/* main */
+.content__basic,
+.content__master {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 .5rem #696ddd;
+  margin-bottom: 2.5rem;
+  color: var(--Gray-700);
+}
+
+.content__basic--title,
+.content__master--title {
+  color: var(--Gray-650);
+  font-size: 1.4rem;
+}
+
+.content__basic--price-anually,
+.content__basic--price-monthly,
+.content__master--price-anually,
+.content__master--price-monthly {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.content__basic--price-monthly,
+.content__master--price-monthly {
+  display: none;
+}
+
+.content__basic .content__basic--info,
+.content__master .content__master--info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.content__basic .content__basic--info p,
+.content__master .content__master--info p {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  border-top: .5px solid #e0dfdf;
+  padding-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.content__basic .content__basic--info p:last-child,
+.content__master .content__master--info p:last-child {
+  padding-bottom: 1.5rem;
+  border-bottom: .5px solid #e0dfdf;
+}
+
+.content__basic button,
+.content__master button {
+  width: 100%;
+  background: var(--linear-gradient);
+  border-radius: .5rem;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: .2rem;
+  padding: 1rem;
+  border: none;
+}
+
+.content__professional {
+  background: linear-gradient(to bottom, #a2a6f1, #696ddd);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2.5rem;
+  color: #fff;
+}
+
+.content__professional--title {
+  font-size: 1.4rem;
+}
+
+.content__professional--price-monthly,
+.content__professional--price-anually {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.content__professional--price-monthly {
+  display: none;
+}
+
+.content__professional--price-anually {
+  /* Your styles here */
+}
+
+.content__professional--info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.content__professional .content__professional--info p {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  border-top: .5px solid #e0dfdf;
+  padding-top: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.content__professional .content__professional--info p:last-child {
+  padding-bottom: 1.5rem;
+  border-bottom: .5px solid #e0dfdf;
+}
+
+.content__professional button {
+  width: 100%;
+  background: #fff;
+  border-radius: .5rem;
+  color: #696ddd;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: .2rem;
+  padding: 1rem;
+  border: none;
+}
+
+/* .content__basic--price-monthly{
+  display: none;
+}
+header:has(input:checked) ~ main .content__basic--price-monthly {
+  display: flex;
+}
+header:has(input:checked) ~ main .content__basic--price-anually {
+  display: none;
+} */ 
